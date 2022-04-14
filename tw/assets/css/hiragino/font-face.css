@@ -1,0 +1,25 @@
+@font-face{
+	font-family:HiraginoSans-W4;
+	src:url(HiraginoSansW4.woff);
+}
+@font-face{
+	font-family:HiraginoSans-W6;
+	src:url(HiraginoSansW6.woff);
+}
+@font-face{
+	font-family:HiraginoSans-W8;
+	src:url(HiraginoSansW8.woff);
+}
+
+@font-face{
+	font-family:HiraginoSans-W4-2;
+	src:url(HiraginoSansW4.woff2);
+}
+@font-face{
+	font-family:HiraginoSans-W6-2;
+	src:url(HiraginoSansW6.woff2);
+}
+@font-face{
+	font-family:HiraginoSans-W8-2;
+	src:url(HiraginoSansW8.woff2);
+}

@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Coupang">
+    <meta name="description" content="酷澎是一家全方位電子商務平台，有數百萬種產品可以快速配送到您手中">
+    <title>酷澎</title>
+    <link rel="icon" href="./images/favicon.png" type="image/gif" sizes="16x16">
+
+    <!-- Bootstrap CSS-->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css' integrity='sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w==' crossorigin='anonymous'/>
+
+    <!-- Owl Carousel CSS -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css' integrity='sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==' crossorigin='anonymous'/>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css' integrity='sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==' crossorigin='anonymous'/>
+
+    <!-- Custom style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font style -->
+    <link href="./assets/css/coupang-text/font-face.css" rel="stylesheet">
+	<link href="./assets/css/Noto_Sans_TC/font-face.css" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="115" height="26" viewBox="0 0 115 26">
+                        <g fill="none" fill-rule="evenodd">
+                          <g>
+                            <g>
+                              <path fill="#82451C" d="M21.967.033v.002c3.639.013 5.406 1.684 6.254 3.163.853 1.483.923 3.045.928 3.466v5.052c0 .331-.036 1.968-.928 3.519-.848 1.478-2.615 3.15-6.254 3.162h-.04c-3.638-.012-5.405-1.684-6.256-3.162-.85-1.484-.92-3.046-.925-3.469V6.714c0-.329.036-1.965.925-3.516.851-1.479 2.618-3.15 6.256-3.163V.033h.04zM7.22.033c3.64.015 5.407 1.686 6.256 3.165.06.104.11.208.158.311.01.033.019.065.019.102 0 .097-.053.176-.132.22v.003L10.8 5.252c-.04.018-.076.03-.116.03-.11 0-.2-.069-.236-.163-.426-.943-1.342-1.944-3.246-1.952-3.08.011-3.586 2.636-3.586 3.386v5.297c0 .751.505 3.371 3.586 3.385 1.878-.008 2.794-.982 3.228-1.91l.011-.026c.046-.077.125-.133.223-.133.042 0 .08.013.114.032h.003l2.728 1.365c.003.002.006.004.01.004l.006.004c.085.043.142.126.142.226 0 .04-.012.077-.029.112-.054.11-.102.216-.163.326-.85 1.478-2.616 3.15-6.256 3.162h-.04c-3.636-.012-5.403-1.684-6.252-3.162C.036 13.684 0 12.047 0 11.715V6.665c.005-.421.075-1.983.928-3.466C1.778 1.719 3.544.048 7.18.035V.033h.04zm38.48.32c0 .001 0 .002-.002.003.137.002.25.113.25.252v17.186l.003.01c0 .14-.116.255-.253.255h-2.865c-.006-.004-.01 0-.014 0-.135 0-.245-.11-.25-.248h-.004v-1.226c-.942.922-2.37 1.806-4.531 1.813h-.038c-3.274-.013-4.867-1.685-5.631-3.163-.803-1.551-.837-3.188-.837-3.519V.632c.003-.138.116-.248.254-.248h.006L34.896.38c.004.004.004.004.007.004.14 0 .257.113.257.255h-.004v11.225c0 .752.505 3.374 3.589 3.384 3.081-.01 3.583-2.632 3.583-3.384v-5.16h.008V.627l-.002-.018c0-.14.113-.253.254-.253V.353zM21.949 3.167c-3.082.011-3.586 2.636-3.586 3.386v5.297c0 .751.504 3.37 3.586 3.385 3.081-.014 3.586-2.634 3.586-3.385V6.553c0-.75-.505-3.375-3.586-3.386z" transform="translate(-56.000000, -31.000000) translate(56.000000, 31.000000)"></path>
+                              <path fill="#FFC401" d="M75.544 12.156c0 .704-.49 3.171-3.492 3.183-3.001-.012-3.49-2.479-3.49-3.183v-.287c0-.705.489-3.17 3.49-3.181 3.001.01 3.492 2.476 3.492 3.181v.287zm3.349-5.615c-.002-1.41-.705-4.71-3.907-6.023-3.254-1.334-7.597.277-8.678.74v.001c-.104.029-.183.123-.183.237 0 .044.014.081.031.117-.003 0-.003.003-.005.003l.877 2.496c0-.004.005-.004.008-.004.034.096.124.162.231.162.035 0 .065-.006.093-.02l.003.002c1.191-.617 4.422-1.7 6.399-.799 1.919.875 1.751 2.917 1.762 3.136v.502c-.93-.678-2.229-1.324-4.063-1.33h-.033c-3.28.012-4.866 1.59-5.635 2.988-.801 1.465-.835 3.011-.835 3.324v.006c0 .31.034 1.857.835 3.322.77 1.396 2.356 2.975 5.635 2.99h.033c1.91-.008 3.24-.695 4.176-1.42v.84c0 .002-.003.004-.003.005 0 .003.003.005.003.008v.002c.006.137.116.244.251.244.004 0 .008-.002.017-.002v.005h2.726v-.005l.009.002c.137 0 .244-.109.253-.244V8.488h.004V6.662c0-.041 0-.08-.004-.12z" transform="translate(-56.000000, -31.000000) translate(56.000000, 31.000000)"></path>
+                              <path fill="#88CC2F" d="M96.114 6.705c0-.332-.03-1.967-.832-3.519-.77-1.479-2.359-3.15-5.635-3.16V.021c-.006 0-.008.003-.02.003-.002 0-.008-.003-.017-.003v.003c-2.154.006-3.574.884-4.515 1.797v-1.2h-.004c.004-.005.004-.01.004-.014 0-.137-.112-.249-.246-.252 0 0 0-.002.002-.003h-2.894v.003c-.14.003-.246.115-.246.252 0 .005.003.009.003.015h-.003v17.203h.003c.01.129.115.232.248.232.005 0 .011-.003.017-.003v.006h3.092v-.003c.133 0 .24-.103.249-.234h.003V6.372c.076-.919.708-3.19 3.577-3.202 3.084.012 3.586 2.635 3.586 3.386v11.23h.006c0 .006-.006.009-.006.014 0 .14.116.253.254.253h3.135v-.002c.137-.006.24-.115.24-.251V6.705z" transform="translate(-56.000000, -31.000000) translate(56.000000, 31.000000)"></path>
+                              <path fill="#31B4DD" d="M109.27 6.595c0 .69-.503 3.194-3.585 3.205-3.085-.01-3.585-2.516-3.585-3.205V6.37c0-.69.5-3.197 3.585-3.207 3.082.01 3.586 2.516 3.586 3.207v.225zm5.608-6.222c0-.135-.107-.244-.24-.25V.119c-1.856-.052-3.058.715-3.833 1.56-1.041-.906-2.645-1.636-5.098-1.644V.033H105.665v.002c-3.637.013-5.404 1.604-6.256 3.015-.887 1.48-.927 3.04-.927 3.353v.17c0 .317.04 1.877.93 3.354.379.632.947 1.298 1.782 1.846-1.37.788-2.578 2.178-2.578 4.689v1.321c0 .137.105.245.242.251v.005h10.405c1.251 0 1.882.825 2.059 1.6.222.982-.157 2.313-1.822 3.205l.005.008c-.098.034-.175.126-.175.237 0 .048.018.092.04.128h-.006l1.36 2.473.006-.001c.04.085.125.144.224.144.04 0 .076-.01.11-.025v.002c3.149-1.607 3.837-4.631 3.337-6.863-.546-2.43-2.61-4.063-5.138-4.063l-7.189.171c.396-2.171 2.929-2.131 3.233-2.118l-.003-.006c.12.004.236.011.362.011h.041c3.637-.011 5.402-1.603 6.253-3.015.889-1.477.928-3.037.928-3.353v-.17c0-.269-.03-1.423-.578-2.669.476-.33 1.218-.636 2.307-.578.002 0 .005.003.008.003.135 0 .245-.108.253-.237V.374z" transform="translate(-56.000000, -31.000000) translate(56.000000, 31.000000)"></path>
+                              <path fill="#F7552F" d="M59.48 11.865c0 .751-.504 3.374-3.585 3.385-3.083-.011-3.585-2.634-3.585-3.385V6.567c0-.75.502-3.372 3.585-3.383 3.081.011 3.584 2.632 3.584 3.383v5.298zm2.792-8.667c-.766-1.479-2.356-3.15-5.63-3.163V.033H56.604v.002c-2.16.008-3.59.892-4.529 1.812V.61h-.001l.001-.003c0-.14-.115-.253-.254-.253-.004 0-.01.004-.015.004 0-.003 0-.005.002-.006h-2.85c0 .001.003.003.003.006-.005 0-.011-.004-.017-.004-.14 0-.254.112-.254.253 0 0 .002 0 .002.003h-.002v24.54l.002.002c.007.134.113.244.252.244h3.143v-.007c.119-.016.209-.11.215-.23.002 0 .002-.002.002-.002v-.012c0-.002.003-.002.003-.002s-.003 0-.003-.003V16.8c.942.817 2.306 1.592 4.3 1.599H56.64c3.275-.013 4.865-1.685 5.631-3.163.804-1.551.837-3.188.837-3.519V6.714c0-.33-.033-1.965-.837-3.516z" transform="translate(-56.000000, -31.000000) translate(56.000000, 31.000000)"></path>
+                            </g>
+                          </g>
+                        </g>
+                    </svg>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              服務介紹
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="#">跨境商城</a></li>
+                              <li><a class="dropdown-item" href="#">火箭超市</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              酷澎優點
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="#">跨境商城</a></li>
+                              <li><a class="dropdown-item" href="#">火箭超市</a></li>
+                            </ul>
+                        </li>
+                      
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#hero">如何使用</a>
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link" href="#who">常見問題</a>
+                      </li>
+
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          繁體中文
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Dropdown 1</a></li>
+                          <li><a class="dropdown-item" href="#">Dropdown 2</a></li>
+                          <li><a class="dropdown-item" href="#">Dropdown 3</a></li>
+                        </ul>
+                      </li>
+
+                      <li class="nav-item">
+                        <button class="btn btn-primary" href="#">下載應用程式</button>
+                      </li>
+                    </ul>
+                </div>  
+            </div>
+        </nav>
+    </header>
+
+    <main id="main">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<div class="carousel-caption-main">
+				<div class="container">
+					<div class="carousel-caption text-start">
+						
+                        <span class="span">歡迎來到酷澎</span>
+                        <h1>從跨境商品到生鮮雜貨<br>
+                            光速送到家
+						</h1>
+						
+						
+					</div>
+				</div>
+			</div>
+
+			<div class="carousel-indicators container">
+				<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+					aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+				<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+				<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+
+			</div>
+
+			
+			<div class="carousel-inner">
+				<div class="item carousel-item active">
+					<img src="./images/slide-hero/desk/hero-1.jpg">
+					<img class="tablet" src="./images/new-images/table-hero-1.jpg">
+					<img class="mobi" src="./images/new-images/mobile-hero-1.jpg">
+				</div>
+
+				<div class="item carousel-item">
+					<img src="./images/slide-hero/desk/hero-2.jpg">
+					<img class="tablet" src="./images/new-images/table-hero-2.jpg">
+					<img class="mobi" src="./images/new-images/mobile-hero-2.jpg">
+				</div>
+
+				<div class="item carousel-item">
+					<img src="./images/slide-hero/desk/hero-3.jpg">
+					<img class="tablet" src="./images/new-images/table-hero-3.jpg">
+					<img class="mobi" src="./images/new-images/mobile-hero-3.jpg">
+				</div>
+
+				<div class="item carousel-item">
+					<img src="./images/slide-hero/desk/hero-4.jpg">
+					<img class="tablet" src="./images/new-images/table-hero-4.jpg">
+					<img class="mobi" src="./images/new-images/mobile-hero-4.jpg">
+				</div>
+
+				<div class="item carousel-item">
+					<img src="./images/slide-hero/desk/hero-5.jpg">
+					<img class="tablet" src="./images/new-images/table-hero-5.jpg">
+					<img class="mobi" src="./images/new-images/mobile-hero-5.jpg">
+				</div>
+			</div>
+
+			<a class="next-section" href="#work"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.38 14.11"
+					width="25.38px" height="14.11px">
+					<defs>
+						<style>
+							.cls-1 {
+								fill: none;
+								stroke: #fff;
+								stroke-miterlimit: 10;
+								stroke-width: 2px;
+							}
+						</style>
+					</defs>
+					<title>arrow_bottom</title>
+					<g id="レイヤー_2" data-name="レイヤー 2">
+						<g id="矢印">
+							<polyline class="cls-1" points="24.68 0.71 12.69 12.69 0.71 0.71" />
+						</g>
+					</g>
+				</svg>
+            </a>
+		</div>
+
+
+        <section id="hero" class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-12">
+                        <h2>酷澎是一家全方位電子商務平台，有數百萬種產品可以快速配送到您手中</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="intro" class="section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-3">
+                        <div class="d-flex">
+                            <div class="nav nav-tabs flex-column w-100" id="nav-tab" role="tablist">
+                                <button class="nav-link active" id="nav-special1-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-special1" type="button" role="tab" aria-controls="nav-special1"
+                                    aria-selected="true">跨境商城</button>
+                                <button class="nav-link" id="nav-special2-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-special2" type="button" role="tab" aria-controls="nav-special2"
+                                    aria-selected="false">火箭超市</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-9">
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-special1" role="tabpanel"
+                                aria-labelledby="nav-special1-tab">
+                                <div class="row align-items-center">
+                                    
+                                    <div class="col-12 col-md-8">
+                                        <img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/menu/lobster-bisque.jpg"
+                                            alt="跨境商城" title="">
+                                    </div>
+
+                                    <div class="col-12 col-md-4">
+                                        <h3>3天 即可收到海外產品</h3>
+                                        <p>食品、美妝、時尚衣飾等<br>
+                                            數百萬種海外精選商品供您選擇<br>
+                                            全台皆可使用</p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="nav-special2" role="tabpanel"
+                                aria-labelledby="nav-special2-tab">
+                                <div class="row align-items-center">
+                                    
+                                    <div class="col-12 col-md-8">
+                                        <h3>10-15分鐘 即可收到生鮮雜貨</h3>
+                                        <p>不論是生鮮食品或日常所需<br>
+                                        高品質的商品直接送到您的門前</p>
+
+                                        <p>服務區域</p>
+                                        <ul class="service-zone">
+                                            <li>中山區</li>
+                                            <li>大同區</li>
+                                            <li>松山區</li>
+                                            <li>信義區</li>
+                                            <li>大安區</li>
+                                            <li>中和區</li>
+                                        </ul>
+
+                                    </div>
+
+                                    <div class="col-12 col-md-4">
+                                        <img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/menu/lobster-bisque.jpg"
+                                            alt="火箭超市 10-15分鐘即可收到生鮮雜貨" title="火箭超市 10-15分鐘即可收到生鮮雜貨">
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="affordable" class="section">
+            <div class="container">
+                <header class="section-header">
+                    <h2>您最愛的品牌和選品</h2>
+                    <p>來自韓國、美國、中國等上萬個精選品牌由酷澎直送來台</p>
+                </header>
+                
+                <img src="" alt="">
+            </div>
+        </section>
+
+        <section id="affordable" class="section">
+            <div class="container">
+                <header class="section-header">
+                    <h2>優惠的商品價格</h2>
+                    <p></p>
+                    <p>我們提供在市場上具有競爭力的價格優勢<br>
+                    讓顧客可以買到最優惠的商品</p>
+                </header>
+                
+                <img src="" alt="">
+            </div>
+        </section>
+
+        <section id="deliver" class="section">
+            <div class="container">
+                <header class="section-header">
+                    <h2>快速可靠的配送</h2>
+                    <p>透過自建的倉庫和可靠的配送夥伴<br>
+                    我們承諾顧客用最快的速度將商品送達</p>
+                </header>
+                
+                <img src="" alt="">
+            </div>
+        </section>
+
+        <section id="operate" class="section">
+            <div class="container">
+                <header class="section-header">
+                    <h2>酷澎的運作方式為何？</h2>
+                </header>
+
+                <div class="owl-carousel-work owl-carousel owl-loaded owl-drag">
+            
+                    <div class="owl-stage-outer">
+                        <div class="owl-stage" style="transform: translate3d(-877px, 0px, 0px); transition: all 0.5s ease 0s; width: 2194px;">
+                            <div class="owl-item" style="width: 322.667px; margin-right: 116px;">
+                                <div>
+                        <img src="//img1a.coupangcdn.com/image/eats/jmember/corp/tw/slide-how/tw/TW-TW-1.png">
+                        <p>包羅萬象商品任你選</p>
+                      </div>
+                    </div>
+                    <div class="owl-item" style="width: 322.667px; margin-right: 116px;"><div>
+                        <img src="//img1a.coupangcdn.com/image/eats/jmember/corp/tw/slide-how/tw/2@3x-min.jpg">
+                        <p>瀏覽高品質的商品</p>
+                      </div>
+                    </div>
+                    <div class="owl-item active" style="width: 322.667px; margin-right: 116px;">
+                        <div>
+                            <img src="//img1a.coupangcdn.com/image/eats/jmember/corp/tw/slide-how/tw/3@3x-min.jpg">
+                        <p>結帳下單</p>
+                      </div>
+                    </div>
+                    
+                    <div class="owl-item active" style="width: 322.667px; margin-right: 116px;"><div>
+                        <img src="//img1a.coupangcdn.com/image/eats/jmember/corp/tw/slide-how/tw/4@3x-min.jpg">
+                        <p>即時追蹤訂單狀態</p>
+                      </div>
+                    </div>
+                    
+                    <div class="owl-item active" style="width: 322.667px; margin-right: 116px;"><div>
+                        <img src="//img1a.coupangcdn.com/image/eats/jmember/corp/tw/slide-how/tw/5@3x-min.jpg">
+                        <p>10分鐘送到你手中</p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-nav"><button type="button" role="presentation" class="owl-prev"><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="chevron-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" class="svg-inline--fa fa-chevron-left fa-w-8"><path fill="currentColor" d="M231.293 473.899l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L70.393 256 251.092 74.87c4.686-4.686 4.686-12.284 0-16.971L231.293 38.1c-4.686-4.686-12.284-4.686-16.971 0L4.908 247.515c-4.686 4.686-4.686 12.284 0 16.971L214.322 473.9c4.687 4.686 12.285 4.686 16.971-.001z" class=""></path></svg></button><button type="button" role="presentation" class="owl-next disabled"><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="chevron-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" class="svg-inline--fa fa-chevron-right fa-w-8"><path fill="currentColor" d="M24.707 38.101L4.908 57.899c-4.686 4.686-4.686 12.284 0 16.971L185.607 256 4.908 437.13c-4.686 4.686-4.686 12.284 0 16.971L24.707 473.9c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L41.678 38.101c-4.687-4.687-12.285-4.687-16.971 0z" class=""></path></svg></button></div><div class="owl-dots"><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot active"><span></span></button></div></div>
+            </div>
+        </section>
+
+        <section id="faq" class="section">
+            <div class="container">
+                <header class="section-header">
+                    <h2>FAQ</h2>
+                </header>
+            
+                <div class="row">
+                    <div class="col-12 col-md-12">
+                        <div class="accordion" id="accordionExample">
+    
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-controls="collapseOne">
+                                  請問有服務範圍限制嗎？
+                                </button>
+                              </h2>
+                              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" aria-expanded="false" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                   <p>【跨境商城】全台各地皆可使用</p>
+                                   <p>【火箭超市】僅在雙北中山、大同、松山、信義、大安、中和等區域提供服務</p>
+                                </div>
+                              </div>
+                            </div>
+    
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    跨境商城的商品來自哪些地方？
+                                </button>
+                              </h2>
+                              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    跨境商城的超過500萬支選品來自韓國、美國、中國地區，直接寄送商品給顧客。
+                                </div>
+                              </div>
+                            </div>
+    
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    購買跨境商城的商品有什麼規範？
+                                </button>
+                              </h2>
+                              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    購買海外的商品需透過 EZ WAY APP 進行實名認證後，方可順利通關收貨。每項商品也有不一樣的購買限制，可在 APP 中查看。
+                                </div>
+                              </div>
+                            </div>
+    
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFour">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    如何使用 EZ WAY APP？
+                                  </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                  <div class="accordion-body">
+                                    <p>EZ WAY 為財政部關務署的進口認證系統。當購買海外商品，海關會依據其中註冊的資料進行報關。在 EZ WAY APP 中完成實名認證即不再需要擔心海外商品通關啦！</p>
+                                    <p>使用方式：</p>
+                                    <p>下載 EZ WAY APP → 填寫註冊資料 → 拍攝證件上傳 → 完成實名認證</p>
+                                  </div>
+                                </div>
+                            </div>
+    
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFive">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    購買海外商品需支付關稅嗎？
+                                  </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                  <div class="accordion-body">
+                                    是的，酷澎 APP 中會在結帳時試算關稅金額，若商品抵台後符合免稅標準，則會直接退款給您。
+                                  </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingSix">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    付款方式有哪些？
+                                  </button>
+                                </h2>
+                                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                                  <div class="accordion-body">
+                                    酷澎目前只支援信用卡付款
+                                  </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingSeven">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                    如何查詢配送進度？
+                                  </button>
+                                </h2>
+                                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                                  <div class="accordion-body">
+                                    可透過酷澎 APP 即時查看配送進度
+                                  </div>
+                                </div>
+                            </div>
+
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingEight">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                    更多問題
+                                  </button>
+                                </h2>
+                                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                                  <div class="accordion-body">
+                                    有更多問題歡迎洽詢客服專線 02-55927298，或至 APP 內的 [個人資料 > 客戶中心及意見回饋] 與我們聯繫，將由客服專員即時協助。
+                                  </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>     
+        
+        <section id="qrcode" class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <h2>掃描QR Code下載 享滿額免運</h2>
+                        <ul>
+                            <li><a href=""><img src="" alt="Apple App Store"></a></li>
+                            <li><a href=""><img src="" alt="Google Play"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <p>
+                        <ul>
+                            <li>Coupang使用者條款</li>
+                            <li>顧客隱私權政策通知－台灣</li>
+                        </ul>
+                    </p>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <p>Follow us</p>
+                    <ul>
+                        <li><a href=""><img src="" alt=""></a></li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <a href="./index.html"><svg xmlns="http://www.w3.org/2000/svg" width="105" height="24" viewBox="0 0 105 24">
+                        <defs>
+                            <filter id="8imm2riwwa" color-interpolation-filters="auto">
+                                <feColorMatrix in="SourceGraphic" values="0 0 0 0 0.462745 0 0 0 0 0.525490 0 0 0 0 0.584314 0 0 0 1.000000 0"></feColorMatrix>
+                            </filter>
+                        </defs>
+                        <g fill="none" fill-rule="evenodd">
+                            <g>
+                                <g filter="url(#8imm2riwwa)" transform="translate(-1295.000000, -7280.000000) translate(0.000000, 7215.000000)">
+                                    <g>
+                                        <path fill="#FFF" fill-rule="nonzero" d="M56.93 2.93C56.22 1.56 54.802.01 51.79.01c-1.948 0-3.307.834-4.134 1.668V.546c0-.119-.118-.178-.177-.178h-2.657c-.118 0-.177.119-.177.178v22.64c0 .12.118.18.177.18h2.894c.118 0 .177-.12.177-.18v-7.685c.886.774 2.126 1.49 3.956 1.49 3.012 0 4.43-1.55 5.138-2.92.709-1.43.768-2.92.768-3.217V6.266c-.06-.357-.118-1.906-.827-3.336zm-2.6 8.043c0 .715-.472 3.098-3.247 3.098-2.835 0-3.248-2.443-3.248-3.098V6.087c0-.715.472-3.098 3.248-3.098 2.834 0 3.248 2.443 3.248 3.098v4.886zM13.465 6.206c0-.297.059-1.787.826-3.217C15.06 1.62 16.713.07 20.02.07s4.96 1.55 5.728 2.92c.827 1.43.827 2.92.827 3.217v4.588c0 .298-.06 1.787-.827 3.217-.768 1.37-2.362 2.92-5.728 2.92-3.307 0-4.96-1.55-5.729-2.92-.826-1.43-.826-2.92-.826-3.217V6.206zm3.307 4.707c0 .715.472 3.098 3.248 3.098 2.834 0 3.307-2.442 3.307-3.098V6.028c0-.715-.473-3.098-3.307-3.098-2.835 0-3.248 2.442-3.248 3.098v4.885zM41.988.546c0-.119-.059-.178-.177-.178h-2.894c-.118 0-.177.119-.177.178v10.367c0 .715-.472 3.098-3.248 3.098-2.835 0-3.307-2.442-3.307-3.098V.546c0-.119-.118-.178-.177-.178h-2.894c-.118 0-.177.119-.177.178v10.248c0 .298 0 1.787.768 3.217.708 1.37 2.126 2.92 5.138 2.92 1.003 0 1.83-.18 2.48-.537.65-.298 1.24-.715 1.653-1.132v1.132c0 .12.118.18.178.18h2.657c.118 0 .177-.12.177-.18V.546zM72.106 6.028c0-1.311-.65-4.35-3.543-5.541-2.835-1.192-6.555.12-7.736.596l-.236.119c-.119.06-.178.179-.119.298l.827 2.383c.06.12.118.179.236.12.06 0 .06-.06.119-.06 1.122-.596 4.015-1.55 5.787-.715 1.772.834 1.594 2.68 1.594 2.919v.477c-.826-.596-2.007-1.192-3.72-1.252-3.012 0-4.43 1.49-5.138 2.741-.708 1.37-.768 2.8-.768 3.038 0 .298.06 1.728.768 3.039.709 1.31 2.126 2.74 5.138 2.74 1.772 0 2.953-.655 3.839-1.31v.774c0 .12.118.18.177.18h2.54c.117 0 .176-.12.176-.18V6.087c.06 0 .06 0 .06-.06zm-3.07 5.183c0 .655-.473 2.92-3.19 2.92-2.716 0-3.189-2.265-3.189-2.92v-.238c0-.656.473-2.92 3.19-2.92 2.716 0 3.188 2.264 3.188 2.92v.238zM104.764.13c-1.713-.06-2.776.655-3.484 1.43-.945-.835-2.422-1.49-4.666-1.49-3.307 0-4.96 1.49-5.728 2.8-.827 1.37-.827 2.8-.827 3.098v.179c0 .298.06 1.728.827 3.098.354.596.886 1.192 1.653 1.728-1.24.715-2.362 2.025-2.362 4.349v1.251c0 .12.118.238.177.238h9.508c1.122 0 1.713.775 1.89 1.49.177.894-.118 2.085-1.654 2.92l-.118.059c-.118.06-.118.179-.059.298l1.3 2.323c.059.12.177.12.295.06 0 0 .65-.417.886-.536.236-.12.413-.298.59-.477 1.654-1.549 1.949-3.634 1.595-5.302-.473-2.264-2.363-3.575-4.725-3.575h-6.555c.354-2.026 2.658-1.966 2.953-1.966h.354c3.307 0 4.96-1.49 5.729-2.8.826-1.37.826-2.8.826-3.099V5.91c0-.239 0-1.311-.531-2.443.413-.298 1.122-.596 2.126-.536.118 0 .236-.12.236-.18V.428c0-.178-.118-.298-.236-.298zm-4.902 5.957c0 .656-.472 2.92-3.248 2.98-2.834 0-3.248-2.324-3.248-2.98V5.91c0-.656.473-2.92 3.248-2.98 2.835 0 3.248 2.324 3.248 2.98v.178zM12.402 13.475l-2.54-1.31c-.118-.06-.236 0-.295.118v.06c-.413.834-1.24 1.728-2.953 1.787-2.834 0-3.248-2.442-3.248-3.098V6.147c0-.715.473-3.098 3.248-3.098 1.713 0 2.599.953 2.953 1.787.059.06.118.179.236.179h.118l2.48-1.31c.119-.06.119-.18.06-.299-.06-.119-.118-.178-.118-.298C11.575 1.738 9.98.19 6.614.19c-3.307 0-4.96 1.55-5.728 2.92C.059 4.358 0 5.908 0 6.205v4.588c0 .298.06 1.787.827 3.217.767 1.37 2.362 2.92 5.728 2.92h.06c3.306 0 4.96-1.55 5.728-2.92l.177-.298c0-.06-.06-.178-.118-.238zM87.047 2.93C86.34 1.56 84.862.01 81.91.01c-1.948 0-3.248.834-4.133 1.668V.546c0-.119-.119-.178-.178-.178h-2.657c-.118 0-.177.119-.177.178v15.908c0 .12.118.179.177.179h2.894c.118 0 .177-.12.177-.179V5.909c.059-.835.65-2.92 3.248-2.98 2.834 0 3.307 2.443 3.307 3.099v10.426c0 .12.118.179.177.179h2.894c.118 0 .177-.12.177-.179V6.206c0-.297 0-1.846-.768-3.276z" transform="translate(1295.000000, 65.000000)"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <p> ©Coupang Taiwan Co., Ltd. 保留所有權利。
+                        本網站上顯示的所有商標、標誌和服務標誌均為酷澎股份有限公司和/或其在美國和其他國家/
+                        地區註冊之關聯公司之所屬財產。</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.js' integrity='sha512-GQk/YTeRwD0dTnM//plfcWnGTGqGt0FB33mRTcbcuVneAi5ZrdOA28EpJltqF9lwr/0jRUEcE6yYV7duc1MEVw==' crossorigin='anonymous'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

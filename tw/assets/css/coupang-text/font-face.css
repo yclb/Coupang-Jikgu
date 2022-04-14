@@ -1,0 +1,50 @@
+@font-face{
+	font-family:WOFF_0;
+	src:url(woff/CoupangText-Bold.woff);
+}
+
+@font-face{
+	font-family:WOFF_1;
+	src:url(woff/CoupangText-Light.woff);
+}
+
+@font-face{
+	font-family:WOFF_2;
+	src:url(woff/CoupangText-Medium.woff);
+}
+
+@font-face{
+	font-family:WOFF_3;
+	src:url(woff/CoupangText-Regular.woff);
+}
+
+@font-face{
+	font-family:WOFF_4;
+	src:url(woff/CoupangText-SemiBold.woff);
+}
+
+@font-face{
+	font-family:WOFF2_0;
+	src:url(woff2/CoupangText-Bold.woff2);
+}
+
+@font-face{
+	font-family:WOFF2_1;
+	src:url(woff2/CoupangText-Light.woff2);
+}
+
+
+@font-face{
+	font-family:WOFF2_2;
+	src:url(woff2/CoupangText-Medium.woff2);
+}
+
+@font-face{
+	font-family:WOFF2_3;
+	src:url(woff2/CoupangText-Regular.woff2);
+}
+
+@font-face{
+	font-family:WOFF2_4;
+	src:url(woff2/CoupangText-SemiBold.woff2);
+}
