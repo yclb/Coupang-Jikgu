@@ -1,3 +1,7 @@
+*{
+    /* outline: 1px dotted #ff6500; */
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -85,7 +89,7 @@ a.next-section {
 
 .carousel-caption {
     position: absolute;
-    right: calc(5% + 5px);
+    right: calc(18% + 5px);
     bottom: auto;
     left: auto;
     padding-top: 0;
@@ -151,6 +155,13 @@ button.btn.btn-outline-success {
 .nav-item.active .nav-link {
     color: #fff;
     opacity: 1;
+}
+
+.carousel-qrcode img{
+    position: absolute;
+    bottom: 0;
+    right: 55%;
+    z-index: 3;
 }
 
 .carousel-caption p:last-child {
@@ -302,6 +313,135 @@ button.btn.btn-outline-success:hover {
     border-bottom: 2px solid #000;
 }
 
+/* .section */
+.section-header{
+    margin-bottom: 100px;
+}
+
+/* #hero */
+#hero{
+    background-color: #3f6df4;
+    color: #fff;
+    font-size: 30px;
+    padding: 50px 0;
+}
+
+/* #intro */
+#intro .service-zone{
+    list-style: none;
+    padding: 0;
+}
+
+#intro .service-zone li{
+    border: 1px solid #707070;
+    border-radius: 30px;
+    display: inline-block;
+    margin: 0 15px 15px 0;
+    padding: 7px 20px;
+}
+
+#intro h3{
+    margin-bottom: 20px;
+}
+
+#intro span.important{
+    color: #3f6df4;
+    font-size: 60px;
+}
+
+#intro .nav-tabs .fade{
+    display: none;
+}
+
+/* #qrcode */
+#qrcode{
+
+}
+
+.app-desc .mobile{
+    display: none;
+}
+
+.app-desc h2{
+    margin-bottom: 30px;
+}
+
+.app-desc ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+/* .app-desc li:nth-child(1){
+    margin-right: 50px;
+} */
+
+/* #faq */
+#faq{
+
+}
+
+
+/* #footer */
+#footer{
+    color: #000;
+    font-size: 14px;
+}
+
+#footer ul{
+    list-style: none;
+    padding: 0;
+}
+
+#footer .group-social{
+    margin: 0 20px;
+}
+
+#footer .group-social li:not(:last-child){
+    margin-right: 20px;
+}
+
+#footer a{
+    color: #454f5b;
+    text-decoration: none;
+}
+
+#footer p{
+    margin: 0;
+}
+
+.accordion-item{
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    border-top: none;
+    border-right: none;
+    border-left: none; */
+}
+
+.accordion-button::before{
+    content: "Q";
+    color: #3f6df4;
+    margin-right: 15px;
+
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0,0,0,.125);
+}
+
+.accordion-button:not(.collapsed){
+    background-color: transparent;
+}
+
+.accordion-body::before{
+    content: "A";
+    color: #f00;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.accordion-body p:nth-child(1){
+    display: inline-block;
+}
 
 /*****carousel*********/
 .carousel-caption h1 strong {
@@ -406,7 +546,6 @@ footer {
 }
 
 footer p {
-    margin: 0 0 18px 0;
     font-family: WOFF_3;
     font-size: 14px;
     font-weight: normal;
@@ -509,7 +648,7 @@ h2.heading {
 
 /*****work-slide*********/
 /***** sale *********/
-h3 {
+/* h3 {
     margin: 0 0 50px 0;
     font-family: WOFF_0;
     font-size: 34px;
@@ -519,7 +658,7 @@ h3 {
     line-height: normal;
     letter-spacing: -0.17px;
     color: #ffffff;
-}
+} */
 
 h1.heading {
     margin: 0 0 73px 0;
@@ -941,9 +1080,9 @@ button.owl-next {
     margin-top: 15px;
 }
 
-footer .container>div {
+/* footer .container>div {
     max-width: 940px;
-}
+} */
 
 /************* fix ********/
 .container,
@@ -996,6 +1135,10 @@ footer .container>div {
     }
 }
 
+@media all and (min-width: 1200px){
+    
+}
+
 @media all and (min-width: 992px) {
     .map h2.heading {
         max-width: 460px;
@@ -1003,7 +1146,7 @@ footer .container>div {
 
     .navbar .nav-item:hover .dropdown-menu {
         display: block;
-        margin-top: 10px;
+        /* margin-top: 10px; */
     }
 }
 
@@ -1038,6 +1181,14 @@ footer .container>div {
         padding-bottom: 0;
         padding-top: 0;
         height: 20px;
+    }
+
+    .app-desc{
+        padding: 0 100px;
+    }
+
+    .app-desc li:nth-child(1) {
+        margin-right: 50px;
     }
 }
 
@@ -1177,9 +1328,9 @@ footer .container>div {
         padding: 0 15px;
     }
 
-    footer .container>div {
+    /* footer .container>div {
         max-width: 730px;
-    }
+    } */
 
     footer .container>div>p:nth-child(2) br {
         display: none;
@@ -1643,9 +1794,9 @@ footer .container>div {
         display: none;
     }
 
-    .collapse:not(.show) {
+    /* .collapse:not(.show) {
         display: block;
-    }
+    } */
 
     #navbarmain .container {
         padding-right: 0;
@@ -1679,6 +1830,26 @@ footer .container>div {
 
     .navbar-expand-md .navbar-nav li.nav-item.nav-item-end {
         display: none;
+    }
+
+    #qrcode{
+        text-align: center;
+    }
+
+    #qrcode .app-desc{
+        margin: 20px 0;
+    }
+
+    #qrcode .app-group li{
+        margin-bottom: 20px;
+    }
+
+    #qrcode .app-desc .desktop, #qrcode .img-qrcode{
+        display: none;
+    }
+
+    #qrcode .app-desc .mobile{
+        display: block;
     }
 }
 
