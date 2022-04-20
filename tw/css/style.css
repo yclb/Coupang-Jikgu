@@ -1465,7 +1465,8 @@ button.owl-next {
     }
 
     .group-button{
-        margin-bottom: 50px;
+        margin: 0 auto 50px;
+        width: fit-content;
         text-align: center;
     }
 
@@ -1518,6 +1519,14 @@ button.owl-next {
         display: none;
     }
 
+
+    /* .owl-carousel-intro .owl-item:nth-child(1){
+
+    }
+
+    .owl-carousel-intro .owl-item:nth-child(2){
+
+    } */
 }
 
 

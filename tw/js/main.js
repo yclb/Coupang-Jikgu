@@ -107,4 +107,51 @@ jQuery(document).ready(function(){
 			}
 		}
 	});
+
+	jQuery('.owl-carousel-intro').owlCarousel({
+		loop: false,
+		nav: true,
+		margin: 10,
+		rewind: true,
+		mouseDrag: false,
+		responsive:{
+			0:{
+				items:1
+			},
+			600:{
+				items:1
+			},            
+			960:{
+				items:1
+			},
+			1200:{
+				items:1
+			}
+		}
+	});
+
+	var owlIntro = jQuery('.owl-carousel-intro');
+		owlIntro.on('mousewheel', '.owl-stage', function(e) {	
+   	if (e.deltaY > 0) {
+		owlIntro.trigger('prev.owl');
+   	} else {
+		owlIntro.trigger('next.owl');
+   	}
+   		e.preventDefault();
+	});
+
+	// var navbarSupportedContent = jQuery('#navbarSupportedContent .ul');
+	
+
+	// jQuery(window).scroll(function() {
+    //     var scroll = $(window).scrollTop();
+	// 	console.log(scroll);
+	// 	console.log(navbarSupportedContent);
+    //     if (scroll >= 500) {
+    //         navbarSupportedContent.removeClass('active').addClass("active");
+    //     } else if(scroll >= 1200){
+    //         navbarSupportedContent.removeClass("active").addClass('clearHeactiveder');
+    //     }
+    // });
+
 });
