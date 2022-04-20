@@ -1679,6 +1679,10 @@ button.owl-next {
         /* position: static; */
         max-width: 70%;
     }
+
+    #qrcode .app-group li img{
+        width: 150px;
+    }
 }
 
 @media (max-width: 600px) {
