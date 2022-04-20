@@ -350,12 +350,12 @@ button.btn.btn-outline-success:hover {
 
 
 /* #intro */
-#intro .service-zone{
+#intro .service-zone,.intro .service-zone{
     list-style: none;
     padding: 0;
 }
 
-#intro .service-zone li{
+#intro .service-zone li, .intro .service-zone li{
     border: 1px solid #707070;
     border-radius: 30px;
     display: inline-block;
@@ -363,16 +363,17 @@ button.btn.btn-outline-success:hover {
     padding: 7px 20px;
 }
 
-#intro h3{
+#intro h3, .intro h3{
     margin-bottom: 20px;
 }
 
-#intro span.important{
+#intro span.important, .intro span.important{
     color: #3f6df4;
+    display: block;
     font-size: 60px;
 }
 
-#intro .nav-tabs .fade{
+#intro .nav-tabs .fade, .intro .nav-tabs .fade{
     display: none;
 }
 
@@ -941,6 +942,10 @@ button.owl-next {
     .navbar .nav-item:hover .dropdown-menu {
         display: block;
     }
+
+    #affordable .mobi, #deliver .mobi{
+        display: none!important;
+    }
 }
 
 @media (min-width: 768px) {
@@ -1217,6 +1222,7 @@ button.owl-next {
         position: absolute;
         margin-top: 0px;
         top: 22px;
+        left: 22px;
     }
 
     .why-coupang-slide-2 {
@@ -1453,6 +1459,65 @@ button.owl-next {
         padding: 7px 0 8px 0 !important;
         font-size: 13px;
     }
+
+    #intro h3, .intro h3{
+        font-size: 25px;
+    }
+
+    .group-button{
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .group-button a{
+        display: none;
+    }
+
+    #intro span.important, .intro span.important{
+        font-size: 40px;
+    }
+
+    #affordable .desktop, #deliver .desktop{
+        display: none!important;
+    }
+
+    #affordable {
+        background-image: url(../images/tablet-affordable.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #fff;
+        position: relative;
+        margin-bottom: 15rem;
+    }
+
+    #deliver {
+        background-image: url(../images/tablet-deliver.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #fff;
+        position: relative;
+        margin-bottom: 15rem;
+    }
+
+    #deliver{
+        background-image: url(../images/tablet-deliver.jpg);
+    }
+
+    #affordable h2, #deliver h2{
+        color: #fff;
+    }
+
+    #affordable .mobi, #deliver .mobi{
+        top: 10%;
+        right: 10%;
+        max-width: 30%;
+        position: absolute;
+    }
+
+    #nav-special2 br{
+        display: none;
+    }
+
 }
 
 
@@ -1539,6 +1604,7 @@ button.owl-next {
     #navbarmain .container {
         padding-right: 0;
         padding-top: 20px;
+        padding-left: 0;
     }
 
     #navbarmain .navbar-nav .nav-link{
@@ -1594,6 +1660,25 @@ button.owl-next {
     #qrcode .app-desc .mobile{
         display: block;
     }
+
+    #affordable h2, #deliver h2{
+        margin: 30px 0 13px 0px;
+    }
+
+    #affordable, #deliver{
+        margin-bottom: 35rem;
+        padding: 80px 0;
+    }
+
+    #affordable .mobi, #deliver .mobi{
+        bottom: unset;
+        right: auto;
+        left: 25%;
+        top: 60%;
+        width: 100%;
+        /* position: static; */
+        max-width: 70%;
+    }
 }
 
 @media (max-width: 600px) {
@@ -1613,7 +1698,7 @@ button.owl-next {
     }
 
     .navbar-expand-md .navbar-nav .nav-item:nth-last-child(2) .dropdown-menu {
-        right: 38px;
+        /* right: 38px; */
         position: relative;
         padding-top: 10px;
     }
@@ -1633,6 +1718,20 @@ button.owl-next {
     }
 }
 
+@media screen and (max-width: 420px){
+    #affordable, #deliver{
+        margin-bottom: 25rem;
+    }
+
+    #affordable .mobi, #deliver .mobi{
+        top: 70%;
+        left: 15%;
+    }
+
+    #intro .service-zone li, .intro .service-zone li{
+        padding: 7px 15px;
+    }
+}
 
 
 /*****fixed*********/
