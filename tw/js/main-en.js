@@ -82,16 +82,4 @@ jQuery(document).ready(function(){
    	}
    		e.preventDefault();
 	});
-
-	jQuery(window).scroll(function(){
-		var windowPosY = $(window).scrollTop();
-		console.log(windowPosY);
-
-		if (windowPosY >= 1200 && windowPosY <= 1800) {
-		   $('#group-button').addClass('sticky');
-		} else {
-		   $('#group-button').removeClass('sticky');
-		}
-	});
-
 });

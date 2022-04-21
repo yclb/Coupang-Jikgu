@@ -874,9 +874,9 @@ button.owl-next {
     margin-top: 15px;
 }
 
-/* footer .container>div {
-    max-width: 940px;
-} */
+.wrapper-btn{
+    margin: 15% 0;
+}
 
 /************* fix ********/
 .container,
@@ -949,6 +949,11 @@ button.owl-next {
 
     #intro2 .group-button{
         display: none;
+    }
+
+    #group-button.sticky, .sticky{
+        position: sticky;
+        top: 20%;
     }
 }
 
@@ -1213,7 +1218,6 @@ button.owl-next {
         display: flex;
         animation-duration: 200000ms;
     }
-
 
     .navbar-expand-md .navbar-nav li.nav-item.nav-item-end {
         padding-top: 10px !important;
