@@ -163,7 +163,6 @@ body {
 .dropdown-menu .dropdown-item {
     display: block;
     width: 100%;
-    /* padding: 0 24px; */
     clear: both;
     text-align: inherit;
     text-decoration: none;
@@ -365,7 +364,6 @@ body {
     content: "Q";
     color: #3f6df4;
     margin-right: 15px;
-
 }
 
 .accordion-button:focus {
@@ -459,14 +457,11 @@ body {
 .why-coupang-slide-2 {
     display: flex;
 	animation-name: slideInLeftcustom;
-	
-    /* animation-duration: 500000ms; */
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 .why-coupang-slide-2 {
-    /* margin-top: 40px; */
-	display:none;
+	display: none;
 }
 .why-coupang-slide > div > img {
     flex-shrink: 0;
@@ -476,8 +471,7 @@ body {
 .why-coupang-slide-1 {
     display: flex;
 	animation-name: slideOutLeft;
-	/* animation-name: slideOutLeft2; */
-    animation-duration: 400000ms; /* [V_0803] */
+    animation-duration: 400000ms;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
@@ -705,13 +699,11 @@ button.owl-next {
 .why-coupang-slide-2 {
     display: flex;
 	animation-name: slideInLeftcustom;
-    /* animation-duration: 500000ms; */
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 
 .why-coupang-slide-2 {
-    /* margin-top: 40px; */
 	display:none;
 }
 
@@ -724,8 +716,7 @@ button.owl-next {
 .why-coupang-slide-1 {
     display: flex;
 	animation-name: slideOutLeft;
-	/* animation-name: slideOutLeft2; */
-    animation-duration: 400000ms; /* [V_0803] */
+    animation-duration: 400000ms;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
@@ -740,6 +731,12 @@ button.owl-next {
 
 .float-end {
     margin-top: 15px;
+}
+
+
+#group-button.sticky, .sticky{
+    position: sticky;
+    top: 20%;
 }
 
 
@@ -1396,15 +1393,6 @@ button.owl-next {
     #nav-special2 br{
         display: none;
     }
-
-
-    /* .owl-carousel-intro .owl-item:nth-child(1){
-
-    }
-
-    .owl-carousel-intro .owl-item:nth-child(2){
-
-    } */
 }
 
 
@@ -1484,10 +1472,6 @@ button.owl-next {
         display: none;
     }
 
-    /* .collapse:not(.show) {
-        display: block;
-    } */
-
     #navbarmain .container {
         padding-right: 0;
         padding-top: 20px;
@@ -1563,7 +1547,6 @@ button.owl-next {
         left: 25%;
         top: 60%;
         width: 100%;
-        /* position: static; */
         max-width: 70%;
     }
 
@@ -1589,7 +1572,6 @@ button.owl-next {
     }
 
     .navbar-expand-md .navbar-nav .nav-item:nth-last-child(2) .dropdown-menu {
-        /* right: 38px; */
         position: relative;
         padding-top: 10px;
     }
