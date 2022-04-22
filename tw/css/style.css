@@ -350,6 +350,10 @@ button.btn.btn-outline-success:hover {
 
 
 /* #intro */
+.intro.section {
+    padding: 130px 0;
+}
+
 #intro .service-zone,.intro .service-zone{
     list-style: none;
     padding: 0;
@@ -382,8 +386,8 @@ button.btn.btn-outline-success:hover {
 }
 
 /* #qrcode */
-#qrcode{
-
+#qrcode .img-qrcode {
+    object-fit: contain;
 }
 
 .app-desc .mobile{
@@ -960,6 +964,9 @@ button.owl-next {
         position: sticky;
         top: 20%;
     }
+    #deliver .tablet-container{
+        display: none;
+    }
 }
 
 @media (min-width: 768px) {
@@ -1192,13 +1199,66 @@ button.owl-next {
     .last-item-p br {
         display: block;
     }
+
+    #affordable .desktop, #deliver .desktop{
+        display: none!important;
+    }
+
+    #affordable {
+        background-image: url(../images/tablet-affordable.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #fff;
+        position: relative;
+        margin-bottom: 15rem;
+    }
+
+    #deliver {
+        background-image: url(../images/tablet-deliver.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #fff;
+        position: relative;
+        margin-bottom: 15rem;
+    }
+
+    #deliver{
+        background-image: url(../images/tablet-deliver.jpg);
+    }
+
+    #affordable h2, #deliver h2{
+        color: #fff;
+    }
+
+    #affordable .mobi, #deliver .mobi{
+        top: 10%;
+        max-width: 30%;
+        position: absolute;
+    }
+
+    #affordable .mobi{
+        right: 10%;
+    }
+
+    #deliver .mobi{
+        left: 10%;
+    }
+
+    #deliver .desktop-container{
+        display: none;
+    }
+
+    #nav-special2 br{
+        display: none;
+    }
+
 }
 
 @media (max-width: 991px) {
-    .section{
+    .section, .intro.section{
         padding: 50px 0;
     }
-
+    
     .section-header{
         margin-bottom: 30px;
     }
@@ -1491,55 +1551,6 @@ button.owl-next {
         font-size: 40px;
     }
 
-    #affordable .desktop, #deliver .desktop{
-        display: none!important;
-    }
-
-    #affordable {
-        background-image: url(../images/tablet-affordable.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        color: #fff;
-        position: relative;
-        margin-bottom: 15rem;
-    }
-
-    #deliver {
-        background-image: url(../images/tablet-deliver.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        color: #fff;
-        position: relative;
-        margin-bottom: 15rem;
-    }
-
-    #deliver{
-        background-image: url(../images/tablet-deliver.jpg);
-    }
-
-    #affordable h2, #deliver h2{
-        color: #fff;
-    }
-
-    #affordable .mobi, #deliver .mobi{
-        top: 10%;
-        right: 10%;
-        max-width: 30%;
-        position: absolute;
-    }
-
-    #nav-special2 br{
-        display: none;
-    }
-
-
-    /* .owl-carousel-intro .owl-item:nth-child(1){
-
-    }
-
-    .owl-carousel-intro .owl-item:nth-child(2){
-
-    } */
 }
 
 
@@ -1702,6 +1713,7 @@ button.owl-next {
         /* position: static; */
         max-width: 70%;
     }
+
 
     #qrcode .app-group li img{
         width: 150px;

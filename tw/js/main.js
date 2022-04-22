@@ -21,7 +21,7 @@ jQuery(document).ready(function(){
 	
 	jQuery('#navbarmain').affix({
 		  offset: {
-			top: jQuery(window).height() * 1
+			top: jQuery(window).height() * 0.93
 		  }
 	});	
 	
@@ -84,5 +84,10 @@ jQuery(document).ready(function(){
 			jQuery('.rocket-market').removeClass('d-none');
 		}	
 	});
-	
+
+	// jQuery(window).on('hashchange', function(e){
+	// 	window.scrollTo(window.scrollX, window.scrollY - 75);
+	// });
+
 });
+

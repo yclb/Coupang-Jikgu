@@ -15,6 +15,10 @@ body {
     padding: 100px 0;
 }
 
+.section.intro{
+    padding: 130px 0;
+}
+
 
 /* #myCarousel */
 .carousel-item > img {
@@ -259,6 +263,10 @@ body {
 
 
 /* #intro */
+.intro .section {
+    padding: 130px 0;
+}
+
 #intro .service-zone,.intro .service-zone{
     list-style: none;
     padding: 0;
@@ -291,8 +299,8 @@ body {
 }
 
 /* #qrcode */
-#qrcode{
-
+#qrcode .img-qrcode{
+    object-fit: contain;
 }
 
 .app-desc .mobile{
@@ -820,6 +828,10 @@ button.owl-next {
     #intro2 .group-button{
         display: none;
     }
+
+    #deliver .tablet-container{
+        display: none;
+    }
 }
 
 @media (min-width: 768px) {
@@ -1053,10 +1065,28 @@ button.owl-next {
     .last-item-p br {
         display: block;
     }
+
+    #affordable .mobi, #deliver .mobi{
+        top: 10%;
+        max-width: 30%;
+        position: absolute;
+    }
+
+    #affordable .mobi{
+        right: 10%;
+    }
+
+    #deliver .mobi{
+        left: 10%;
+    }
+
+    #deliver .desktop-container{
+        display: none;
+    }
 }
 
 @media (max-width: 991px) {
-    .section{
+    .section, .intro.section {
         padding: 50px 0;
     }
 
