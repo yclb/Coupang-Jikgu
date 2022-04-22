@@ -930,6 +930,11 @@ button.owl-next {
     .navbar-expand-md .navbar-nav .nav-item:last-child {
         padding-top: 50px!important;
     }
+
+    .group-button img{
+        height: 3.5rem;
+        object-fit: cover;
+    }
 }
 
 @media all and (min-width: 1200px){

@@ -10,9 +10,9 @@ jQuery(document).ready(function(){
 				className = el.attr("id");
 				if(className == "work"){
 					if (el.offset().top < scrollTop) {
-						jQuery('#work').addClass('active');
+						jQuery('#hero').addClass('active');
 					} else {
-						jQuery('#work').removeClass('active');
+						jQuery('#hero').removeClass('active');
 					}
 				}
 			
@@ -73,13 +73,16 @@ jQuery(document).ready(function(){
 		}
 	});
 
-	var owlIntro = jQuery('.owl-carousel-intro');
-		owlIntro.on('mousewheel', '.owl-stage', function(e) {	
-   	if (e.deltaY > 0) {
-		owlIntro.trigger('prev.owl');
-   	} else {
-		owlIntro.trigger('next.owl');
-   	}
-   		e.preventDefault();
+    jQuery(window).scroll(function(){
+		var windowPosY = $(window).scrollTop();
+		
+		if(windowPosY <= 1000){
+			jQuery('.rocket-market').addClass('d-none');
+			jQuery('.cross-border').removeClass('d-none');
+		}else if(windowPosY <= 1130){
+			jQuery('.cross-border').addClass('d-none');
+			jQuery('.rocket-market').removeClass('d-none');
+		}
+		
 	});
 });
