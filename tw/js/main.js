@@ -8,11 +8,11 @@ jQuery(document).ready(function(){
 		jQuery("main > div").each(function() {
 			var el = jQuery(this),
 				className = el.attr("id");
-				if(className == "work"){
+				if(className == "fixbtn"){
 					if (el.offset().top < scrollTop) {
-						jQuery('#hero').addClass('active');
+						jQuery('#fixbtn').addClass('active');
 					} else {
-						jQuery('#hero').removeClass('active');
+						jQuery('#fixbtn').removeClass('active');
 					}
 				}
 			

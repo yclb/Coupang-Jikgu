@@ -112,6 +112,11 @@ body {
     opacity: .8;
 }
 
+.navbar-nav .nav-item svg{
+    fill: #fff;
+    width: 20px;
+}
+
 .nav-item.active .nav-link {
     color: #fff;
     opacity: 1;
@@ -1395,15 +1400,6 @@ button.owl-next {
         display: none!important;
     }
 
-    #affordable {
-        background-image: url(../images/tablet-affordable.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        color: #fff;
-        position: relative;
-        margin-bottom: 15rem;
-    }
-
     #deliver {
         background-image: url(../images/tablet-deliver.jpg);
         background-repeat: no-repeat;
@@ -1417,7 +1413,7 @@ button.owl-next {
         background-image: url(../images/tablet-deliver.jpg);
     }
 
-    #affordable h2, #deliver h2{
+    #deliver h2{
         color: #fff;
     }
 
@@ -1447,6 +1443,10 @@ button.owl-next {
         float: none;
     }
 
+    .navbar-nav .nav-item svg{
+        fill: #000;
+    }
+
     .carousel-caption{
         font-family: NotoSansTC-Medium;
     }
@@ -1471,6 +1471,28 @@ button.owl-next {
         font-size: 16px;
         text-align: left!important;
     }
+
+    #fixbtn .btn-mb{
+		display: block;
+		text-align: center;
+		margin-top: 30px;
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		left: 0;
+		z-index: 9999;
+		padding: 94px 0px 21px;
+		background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.04) 5%, rgba(255, 255, 255, 0.1) 11%, rgba(255, 255, 255, 0.24) 20%, rgba(255, 255, 255, 0.39) 29%, rgba(255, 255, 255, 0.57) 37%, rgba(255, 255, 255, 0.83) 45%, #ffffff 54%);
+	}
+
+	#fixbtn .btn-mb a{
+		width: 308px;
+		height: 44px;
+	}
+
+	#fixbtn.active .btn-mb{
+		display: block;
+	}
 
     .last-item-p p {
         font-size: 12px;
@@ -1574,7 +1596,7 @@ button.owl-next {
         margin: 30px 0 13px 0px;
     }
 
-    #affordable, #deliver{
+   #deliver{
         margin-bottom: 35rem;
         padding: 80px 0;
     }
