@@ -100,7 +100,7 @@ a.next-section {
     padding-top: 0;
     padding-bottom: 0;
     color: #fff;
-    top: calc(50% + 5px);
+    top: calc(60% + 5px);
     transform: translate(0, -35%);
     z-index: 99;
 }
@@ -109,6 +109,12 @@ a.next-section {
     display: block;
     font-size: 40px;
     margin-bottom: 50px;
+}
+
+.carousel-caption .logo-image{
+    display: inline-block;
+    padding-bottom: 25px;
+    width: 200px;
 }
 
 .navbar-dark .navbar-nav .active,

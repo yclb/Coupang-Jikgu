@@ -34,6 +34,12 @@ body {
     height: 85vh;
 }
 
+.carousel-caption .logo-image{
+    display: inline-block;
+    padding-bottom: 25px;
+    width: 200px;
+}
+
 .carousel-caption {
     position: absolute;
     right: calc(18% + 5px);
@@ -42,7 +48,7 @@ body {
     padding-top: 0;
     padding-bottom: 0;
     color: #fff;
-    top: calc(50% + 5px);
+    top: calc(60% + 5px);
     transform: translate(0, -35%);
     width: 35%;
     z-index: 99;
