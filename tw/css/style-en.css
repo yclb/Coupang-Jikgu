@@ -1652,7 +1652,7 @@ button.owl-next {
 }
 
 @media screen and (max-width: 420px){
-    #affordable, #deliver{
+    #deliver{
         margin-bottom: 25rem;
     }
 
