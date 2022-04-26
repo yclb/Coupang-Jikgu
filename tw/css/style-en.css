@@ -117,6 +117,10 @@ body {
     width: 20px;
 }
 
+.navbar.affix .navbar-nav .nav-item svg{
+    fill: #000;
+}
+
 .nav-item.active .nav-link {
     color: #fff;
     opacity: 1;
@@ -1080,8 +1084,12 @@ button.owl-next {
         right: 10%;
     }
 
-    #deliver .mobi{
+    /* #deliver .mobi{
         left: 10%;
+    } */
+
+    #deliver p br {
+        display: none;
     }
 
     #deliver .desktop-container{

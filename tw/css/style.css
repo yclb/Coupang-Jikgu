@@ -29,6 +29,10 @@ a.next-section svg {
     width: 20px;
 }
 
+.navbar.affix .navbar-nav .nav-item svg{
+    fill: #000;
+}
+
 a.next-section {
     position: absolute;
     bottom: 52px;
@@ -1237,9 +1241,9 @@ button.owl-next {
         right: 10%;
     }
 
-    #deliver .mobi{
+    /* #deliver .mobi{
         left: 10%;
-    }
+    } */
 
     #deliver .desktop-container{
         display: none;
