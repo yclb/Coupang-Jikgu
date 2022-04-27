@@ -1006,6 +1006,10 @@ button.owl-next {
         flex: 0 0 20%;
         max-width: 20%;
     }
+
+    #affordable .product-item:nth-child(2n){
+        margin-top: 60px;
+    }
 }
 
 @media (min-width: 768px) {
@@ -1774,7 +1778,7 @@ button.owl-next {
 
     #deliver{
         margin-bottom: 35rem;
-        padding: 80px 0;
+        padding: 60px 0 80px;
     }
 
     #affordable .mobi, #deliver .mobi{
@@ -1837,7 +1841,7 @@ button.owl-next {
     }
 
     #affordable .mobi, #deliver .mobi{
-        top: 70%;
+        top: 65%;
         left: 15%;
     }
 

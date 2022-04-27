@@ -464,7 +464,7 @@ body {
 }
 
 .carousel-caption h1 {
-    margin: 0 0px 57px 0;
+    margin: 0 0px 20px 0;
     font-size: 50px;
     font-weight: normal;
     font-stretch: normal;
@@ -1711,17 +1711,12 @@ button.owl-next {
     }
 
     #affordable .mobi, #deliver .mobi{
-        top: 70%;
+        top: 65%;
         left: 15%;
     }
 
     #intro .service-zone li, .intro .service-zone li{
         padding: 7px 15px;
-    }
-
-    #affordable .mobi, #deliver .mobi{
-        top: 70%;
-        left: 15%;
     }
 
     #intro .service-zone li, .intro .service-zone li{
