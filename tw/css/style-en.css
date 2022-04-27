@@ -78,9 +78,9 @@ body {
     z-index: 3;
 }
 
-.carousel-caption p:last-child {
+/* .carousel-caption p:last-child {
     margin-top: 50px;
-}
+} */
 
 .carousel-caption p>a {
     margin-right: 16px;
@@ -1257,9 +1257,9 @@ button.owl-next {
         width: fit-content;
     }
 
-    .carousel-caption p {
+    /* .carousel-caption p {
         display: none;
-    }
+    } */
 
     .carousel-caption h1 {
         margin: 0 0px 0 0;
@@ -1677,9 +1677,9 @@ button.owl-next {
         padding-top: 10px;
     }
 
-    .carousel-caption p:last-child {
+    /* .carousel-caption p:last-child {
         margin-top: 300px;
-    }
+    } */
 
     #work .btn-mb a {
         width: calc(100% - 52px);
