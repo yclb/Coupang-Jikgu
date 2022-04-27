@@ -405,6 +405,7 @@ button.btn.btn-outline-success:hover {
 #affordable .product-item .card{
     background-color: #eee;
     border-radius: 2rem;
+    border: none;
     padding: 20px;
 }
 
@@ -999,6 +1000,11 @@ button.owl-next {
     }
     #deliver .tablet-container{
         display: none;
+    }
+
+    .col-lg-2-5 {
+        flex: 0 0 20%;
+        max-width: 20%;
     }
 }
 

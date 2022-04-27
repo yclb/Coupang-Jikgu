@@ -325,6 +325,7 @@ body {
 #affordable .product-item .card{
     background-color: #eee;
     border-radius: 2rem;
+    border: none;
     padding: 20px;
 }
 
@@ -341,7 +342,10 @@ body {
     color: #f00;
 }
 
-
+.col-2-5 {
+    flex: 0 0 20%;
+    max-width: 20%;
+}
 
 
 
@@ -877,6 +881,11 @@ button.owl-next {
 
     #deliver .tablet-container{
         display: none;
+    }
+
+    .col-lg-2-5 {
+        flex: 0 0 20%;
+        max-width: 20%;
     }
 }
 
@@ -1717,6 +1726,10 @@ button.owl-next {
 
     #intro .service-zone li, .intro .service-zone li{
         padding: 7px 15px;
+    }
+
+    #affordable .card{
+        border: none;
     }
 
     #affordable .card img{
