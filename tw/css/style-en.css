@@ -313,6 +313,27 @@ body {
     border: none;
 }
 
+/* #affordable */
+
+#affordable h3{
+    font-size: 16px;
+}
+
+#affordable .product-item img{
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+#affordable .del{
+    color: #ccc;
+}
+
+#affordable .price-tag{
+    color: #f00;
+}
+
+
+
 /* #qrcode */
 #qrcode .img-qrcode{
     object-fit: contain;
@@ -503,7 +524,6 @@ body {
 }
 
 /*****carousel*********/
-
 
 /*****footer*********/
 footer {
