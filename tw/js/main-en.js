@@ -93,7 +93,7 @@ jQuery(document).ready(function(){
 				margin:72
 			},
 			1261:{
-				items: 6
+				items: 5
 			}
 		}
 	});
