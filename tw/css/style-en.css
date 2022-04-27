@@ -314,9 +314,14 @@ body {
 }
 
 /* #affordable */
-
 #affordable h3{
     font-size: 16px;
+}
+
+#affordable .product-item .card{
+    background-color: #eee;
+    border-radius: 2rem;
+    padding: 20px;
 }
 
 #affordable .product-item img{
@@ -331,6 +336,9 @@ body {
 #affordable .price-tag{
     color: #f00;
 }
+
+
+
 
 
 
@@ -1696,6 +1704,19 @@ button.owl-next {
 
     #intro .service-zone li, .intro .service-zone li{
         padding: 7px 15px;
+    }
+
+    #affordable .mobi, #deliver .mobi{
+        top: 70%;
+        left: 15%;
+    }
+
+    #intro .service-zone li, .intro .service-zone li{
+        padding: 7px 15px;
+    }
+
+    #affordable .card img{
+        width: 60%;
     }
 }
 
