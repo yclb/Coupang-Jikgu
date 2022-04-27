@@ -326,7 +326,7 @@ body {
     background-color: #eee;
     border-radius: 2rem;
     border: none;
-    padding: 20px;
+    padding: 10px;
 }
 
 #affordable .product-item img{
@@ -364,13 +364,18 @@ body {
 }
 
 .app-desc h2{
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .app-desc ul{
     list-style-type: none;
     padding: 0;
 }
+
+.app-desc p{
+    font-size: 15px;
+}
+
 
 /* .app-desc li:nth-child(1){
     margin-right: 50px;
@@ -1221,7 +1226,7 @@ button.owl-next {
     }
 
     .carousel-caption p {
-        font-size: 13px;
+        font-size: 12px;
         line-height: 18px;
     }
 
@@ -1283,8 +1288,8 @@ button.owl-next {
     } */
 
     .carousel-caption h1 {
-        margin: 0 0px 10px 0;
-        font-size: 24px;
+        margin: 0 0px 20px 0;
+        font-size: 20px;
         line-height: 30px;
     }
 
@@ -1714,7 +1719,7 @@ button.owl-next {
 
     .carousel-caption .logo-image{
         padding-bottom: 15px;
-        width: 150px;
+        width: 120px;
     }
     
     #affordable .desk-container{
@@ -1734,6 +1739,10 @@ button.owl-next {
     #affordable .mobi, #deliver .mobi{
         top: 65%;
         left: 15%;
+    }
+
+    .carousel-caption .sup{
+        font-size: 12px;
     }
 
     #intro .service-zone li, .intro .service-zone li{
