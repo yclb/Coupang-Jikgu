@@ -60,6 +60,10 @@ body {
     margin-bottom: 50px;
 }
 
+.carousel-caption .sup{
+    font-size: 20px;
+}
+
 .carousel-item .container {
     display: flex !important;
     height: 100%;
