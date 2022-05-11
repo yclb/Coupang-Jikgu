@@ -1,0 +1,96 @@
+/* .section */
+.section {
+    padding: 60px 0;
+}
+
+.section-header{
+    font-family: NotoSansTC-Black;
+    margin-bottom: 50px;
+}
+
+.section-header h2{
+    margin: 85px 0 13px 0px;
+    font-family: NotoSansTC-Black;
+    font-size: 40px;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 1.3;
+    color: #212b36;
+    letter-spacing: -0.3px;
+}
+
+.section-header p{
+    font-family: NotoSansTC-Regular;
+    font-size: 16px;
+}
+
+@mixin container-min-1600(){
+    body .container,
+    body .container-lg,
+    body .container-md,
+    body .container-sm,
+    body .container-xl {
+        max-width: 100%;
+        padding-left: 12vw;
+        padding-right: 12vw;
+    }
+}
+
+@mixin container-min-1500(){
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+        max-width: 100%;
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+}
+
+@mixin container-max-1360() {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+        max-width: 100%;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+@mixin container-max-1160(){
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm {
+        max-width: 100%;
+        padding: 0 56px;
+    }
+}
+
+@mixin container-max-991{
+    .container,
+    .container-fluid,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        padding-right: 26px;
+        padding-left: 26px;
+        max-width: 100%;
+    }
+}
+
+@mixin section-max-991(){
+    .section {
+        padding: 50px 0;
+    }
+
+    .section-header{
+        margin-bottom: 30px;
+    }
+}

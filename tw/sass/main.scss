@@ -1,0 +1,27 @@
+*{outline: 1px dotted #fa0;}
+
+@import 'common';
+@import 'nav';
+
+@import 'carousel';
+@import 'section';
+
+// #selection
+
+// #affordable
+@import 'section/affordable';
+
+// #deliver
+@import 'section/deliver';
+
+// #work
+@import 'section/work';
+
+// #faq 
+@import 'section/faq';
+
+// #qrcode
+@import 'section/qrcode';
+
+// #footer
+@import 'footer';

@@ -1,0 +1,11 @@
+@mixin selection-max-1260(){
+    .why-coupang-slide > div > img {
+        height: 228px;
+    }
+}
+
+@mixin selection-max-991(){
+    .why-coupang-slide > div > img {
+        height: 110px;
+    }
+}

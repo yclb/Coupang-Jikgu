@@ -1,0 +1,32 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding-top: 0;
+    padding-bottom: 0;
+    color: #212b36;
+    font-family: WOFF_2;
+}
+
+@mixin common-max-1260(){
+    h1.heading {
+        margin: 0 0 32px 0;
+        font-size: 40px;
+        letter-spacing: -0.33px;
+    }
+
+    h3 {
+        font-size: 23px;
+    }
+}
+
+@mixin common-max-991(){
+    html {
+        overflow-x: hidden;
+    }
+
+    h3 {
+        font-size: 17px;
+    }
+}

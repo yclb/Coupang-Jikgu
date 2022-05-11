@@ -1,0 +1,22 @@
+@mixin deliver-max-1024() {
+    #deliver {
+        background-image: url(../images/tablet-deliver.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #fff;
+        position: relative;
+        margin-bottom: 15rem;
+    }
+
+    #deliver{
+        background-image: url(../images/tablet-deliver.jpg);
+    }
+
+    #deliver h2{
+        color: #fff;
+    }
+
+    #deliver .desktop-container{
+        display: none;
+    }
+}

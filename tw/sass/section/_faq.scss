@@ -1,0 +1,36 @@
+#faq .accordion-item{
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+}
+
+#faq .accordion-item .accordion-button{
+    font-size: 18px;    
+}
+
+.accordion-button::before{
+    content: "Q";
+    color: #3f6df4;
+    margin-right: 15px;
+
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0,0,0,.125);
+}
+
+.accordion-button:not(.collapsed){
+    background-color: transparent;
+}
+
+.accordion-body::before{
+    content: "A";
+    color: #f00;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.accordion-body p:nth-child(1){
+    display: inline-block;
+}

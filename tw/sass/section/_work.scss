@@ -1,0 +1,121 @@
+.why-coupang-slide {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    max-width: 100%;
+    margin-top: 0px;
+    overflow: hidden;
+    position: relative;
+}
+
+.why-coupang-slide-2 {
+    display: flex;
+	animation-name: slideInLeftcustom;
+    /* animation-duration: 500000ms; */
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.why-coupang-slide-2 {
+    /* margin-top: 40px; */
+	display:none;
+}
+
+.why-coupang-slide > div > img {
+    flex-shrink: 0;
+    height: 354px;
+    max-width: inherit;
+}
+
+.why-coupang-slide-1 {
+    display: flex;
+	animation-name: slideOutLeft;
+	/* animation-name: slideOutLeft2; */
+    animation-duration: 400000ms; /* [V_0803] */
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.why-coupang-slide-1.mb-1{
+	display: none;
+}
+
+
+/*****work-slide*********/
+.work .owl-item p {
+    margin: 29px 0 0 0px;
+    font-family: WOFF_3;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.55;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000000;
+}
+
+.work {
+    background-color: #f1f4f6;
+}
+
+.owl-nav button svg {
+    width: 16px;
+}
+
+.owl-nav {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% + 122px);
+    left: -61px;
+	height: calc(100% - 60px);
+    top: 0px;
+    margin-top: 0px;
+}
+
+.owl-carousel .owl-stage-outer {
+    z-index: 9;
+}
+
+@mixin work-max-1600(){
+    .work .owl-item p {
+        font-size: 18px;
+    }
+}
+
+@mixin work-max-1260(){
+    .owl-carousel-work {
+        padding: 0 44px;
+    }
+
+    .work .owl-item p {
+        font-size: 20px;
+        padding: 0 15px;
+    }
+}
+
+@mixin work-max-991() {
+    .work {
+        padding: 80px 0;
+    }
+
+    .work .owl-item p {
+        font-size: 16px;
+        padding: 0;
+    }
+
+    .owl-carousel-work {
+        padding: 0 44px;
+    }
+
+    .owl-nav {
+        width: 100%;
+        left: 0;
+    }
+}

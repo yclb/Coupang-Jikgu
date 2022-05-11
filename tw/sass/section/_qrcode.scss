@@ -1,0 +1,26 @@
+#qrcode .img-qrcode {
+    object-fit: contain;
+}
+
+.app-desc .mobile{
+    display: none;
+}
+
+.app-desc h2{
+    margin-bottom: 30px;
+}
+
+.app-desc ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+@mixin qrcode-min-768(){    
+    .app-desc{
+        padding: 0 100px;
+    }
+
+    .app-desc li:nth-child(1) {
+        margin-right: 10px;
+    }
+}

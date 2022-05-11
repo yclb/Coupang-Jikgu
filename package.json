@@ -4,7 +4,7 @@
   "description": "Landing pages for Coupang Jikgu",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w",
+    "compile:sass": "node-sass tw/sass/main.scss tw/css/style.css -w",
     "compile:sass-min": "node-sass -w sass/main.scss css/style-min.css --output-style compressed",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/yclb/Coupang-Jikgu/issues"
   },
-  "homepage": "https://github.com/yclb/Coupang-Jikgu#readme"
+  "homepage": "https://github.com/yclb/Coupang-Jikgu#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
 }
