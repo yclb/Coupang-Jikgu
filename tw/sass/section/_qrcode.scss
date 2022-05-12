@@ -24,3 +24,29 @@
         margin-right: 10px;
     }
 }
+
+@mixin qrcode-max-767(){
+    #qrcode{
+        text-align: center;
+    }
+
+    #qrcode .app-desc{
+        margin: 20px 0;
+    }
+
+    #qrcode .app-group li{
+        margin-bottom: 20px;
+    }
+
+    #qrcode .app-desc .desktop, #qrcode .img-qrcode{
+        display: none;
+    }
+
+    #qrcode .app-desc .mobile{
+        display: block;
+    }
+
+    #qrcode .app-group li img{
+        width: 150px;
+    }
+}

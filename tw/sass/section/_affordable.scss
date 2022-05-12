@@ -54,3 +54,19 @@
         right: 10%;
     }
 }
+
+@mixin affordable-max-600(){
+    #affordable .desk-container{
+        display: none;
+    }
+
+    #affordable .mob-container{
+        display: block;
+    }
+}
+
+@mixin affordable-max-420(){
+    #affordable .card img{
+        width: 60%;
+    }
+}

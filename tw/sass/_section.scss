@@ -1,4 +1,4 @@
-/* .section */
+// .section
 .section {
     padding: 60px 0;
 }
@@ -23,6 +23,40 @@
 .section-header p{
     font-family: NotoSansTC-Regular;
     font-size: 16px;
+}
+
+// container
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+    max-width: 100%;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.container.desk-container {position: relative;}
+
+.container.desk-container::before,
+.container.desk-container::after {
+    background: linear-gradient(to right, rgb(255, 255, 255) 0%,rgba(255,255,255,0) 100%);
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 600px;
+    z-index: 2;
+}
+
+.container.desk-container::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+.container.desk-container::before {
+    left: 0;
+    top: 0;
 }
 
 @mixin container-min-1600(){
@@ -71,7 +105,7 @@
     }
 }
 
-@mixin container-max-991{
+@mixin container-max-991(){
     .container,
     .container-fluid,
     .container-lg,
@@ -85,6 +119,7 @@
     }
 }
 
+
 @mixin section-max-991(){
     .section {
         padding: 50px 0;
@@ -92,5 +127,12 @@
 
     .section-header{
         margin-bottom: 30px;
+    }
+}
+
+@mixin  section-max-767() {
+    .section-header h2{
+        font-size: 28px;
+        margin-top: 2;
     }
 }

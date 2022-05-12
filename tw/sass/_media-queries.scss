@@ -10,47 +10,104 @@
 
 // min-1600
 @media (min-width: 1600px){
-    // @include ();
+    @include container-min-1600(); //_section.scss
 }
 
 // min-1500
-@media (min-width: 1500px){}
+@media (min-width: 1500px){
+    @include container-min-1500(); //_section.scss
+}
 
 // min-1261
-@media (min-width: 1261px){}
+@media (min-width: 1261px){
+    @include navbar-min-1261(); //_nav.scss
+}
 
 // min-1200
-@media (min-width: 1200px){}
+@media (min-width: 1200px){
+    @include carousel-min-1200(); //_carousel.scss
+}
 
 // min-992
-@media (min-width: 992px){}
+@media (min-width: 992px){
+    @include navbar-min-992(); //_nav.scss
+    @include affordable-min-992(); //_affordable.scss
+}
 
 // min-768
-@media (min-width: 768px){}
+@media (min-width: 768px){
+    @include navbar-min-768(); //_nav.scss
+    @include qrcode-min-768(); //_qrcode.scss
+}
 
 // max-1600
-@media (max-width: 1600px){}
+@media (max-width: 1600px){
+    @include work-max-1600(); //_work.scss
+    @include carousel-max-1600(); //_carousel.scss
+}
 
 // max-1360
-@media (max-width: 1360px){}
+@media (max-width: 1360px){
+    @include container-max-1360(); //_section.scss
+}
 
 // max-1260
-@media (max-width: 1260px){}
+@media (max-width: 1260px){
+    @include common-max-1260(); //_common.scss
+    @include footer-max-1260(); //_footer.scss
+    @include navbar-max-1260(); //_nav.scss
+    @include carousel-max-1260(); //_carousel.scss
+    @include selection-max-1260(); //_selection.scss
+    @include work-max-1260(); //_work.scss
+}
 
 // max-1160
-@media (max-width: 1160px){}
+@media (max-width: 1160px){
+    @include container-max-1160(); //_section.scss
+}
 
 // max-1024
-@media (max-width: 1024px){}
+@media (max-width: 1024px){
+    @include affordable-max-1024(); //_affordable.scss
+    @include affordable-deliver-max-1024(); //_affordable-deliver.scss
+    @include deliver-max-1024(); //_deliver.scss
+}
 
 // max-991
-@media (max-width: 991px){}
+@media (max-width: 991px){
+    @include common-max-991(); //_common.scss
+    @include footer-max-991(); //_footer.scss
+    @include navbar-max-991(); //_nav.scss
+    @include container-max-991(); //_section.scss
+    @include section-max-991(); //_section.scss
+    @include carousel-max-991(); //_carousel.scss
+    @include selection-max-991(); //_selection.scss
+    @include work-max-991(); //_work.scss
+}
 
 // max-767
-@media (max-width: 767px){}
+@media (max-width: 767px){
+    @include footer-max-767(); //_footer.scss
+    @include navbar-max-767(); //_nav.scss
+    @include section-max-991(); //_section.scss
+    @include affordable-deliver-max-767(); //_affordable-deliver.scss
+    @include carousel-max-767(); //_carousel.scss
+    @include deliver-max-767(); //_deliver.scss
+    @include fixbtn-max-767(); //_fixbtn.scss
+    @include qrcode-max-767(); //_qrcode.scss
+}
 
 // max-600
-@media (max-width: 600px){}
+@media (max-width: 600px){
+    @include footer-max-600(); //_footer.scss
+    @include navbar-max-600(); //_nav.scss
+    @include owl-carousel-max-600(); //_owl-carousel.scss
+    @include affordable-max-600(); //_affordable.scss
+}
 
 // max-420
-@media (max-width: 420px){}
+@media (max-width: 420px){
+    @include affordable-max-420(); //_affordable.scss
+    @include affordable-deliver-max-420(); //_affordable-deliver.scss
+    @include deliver-max-420(); //_deliver.scss
+}

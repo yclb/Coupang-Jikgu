@@ -20,3 +20,16 @@
         display: none;
     }
 }
+
+@mixin deliver-max-767() {
+    #deliver{
+        margin-bottom: 35rem;
+        padding: 60px 0 80px;
+    }
+}
+
+@mixin deliver-max-420(){
+    #deliver{
+        margin-bottom: 25rem;
+    }
+}

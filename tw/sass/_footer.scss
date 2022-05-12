@@ -102,13 +102,23 @@ h2.heading {
     footer .container,
     footer .container-lg,
     footer .container-md,
-    footer .container-sm,
-    header .container,
-    header .container-lg,
-    header .container-md,
-    header .container-sm {
+    footer .container-sm{
         max-width: 100%;
         padding-right: 26px;
         padding-left: 26px;
+    }
+}
+
+
+@mixin footer-max-767() {
+    #footer {
+        padding: 60px 0 200px 0;
+    }
+}
+
+@mixin footer-max-600(){
+    footer p {
+        font-size: 12px;
+        line-height: 17px;
     }
 }
