@@ -15,6 +15,12 @@ body {
     padding: 60px 0;
 }
 
+sup{
+    font-weight: 300;
+    font-size: 22px;
+    top: -0.7em;
+}
+
 a.next-section svg {
     -webkit-animation: nextBtn 1.5s ease-in-out infinite alternate;
     animation: nextBtn 1.5s ease-in-out infinite alternate;
@@ -407,6 +413,13 @@ button.btn.btn-outline-success:hover {
 
 .app-desc h2{
     margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.app-desc sup{
+    font-weight: 300;
+    font-size: 22px;
+    top: -0.7em;
 }
 
 .app-desc ul{
@@ -414,6 +427,9 @@ button.btn.btn-outline-success:hover {
     padding: 0;
 }
 
+#qrcode .attention{
+    font-size: 14px;
+}
 
 /* #faq */
 #faq .accordion-item{
@@ -894,7 +910,7 @@ button.owl-next {
         content: "";
         height: 100%;
         position: absolute;
-        width: 600px;
+        width: 900px;
         z-index: 2;
     }
 

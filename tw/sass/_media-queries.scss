@@ -89,7 +89,7 @@
 @media (max-width: 767px){
     @include footer-max-767(); //_footer.scss
     @include navbar-max-767(); //_nav.scss
-    @include section-max-991(); //_section.scss
+    @include section-max-767(); //_section.scss
     @include affordable-deliver-max-767(); //_affordable-deliver.scss
     @include carousel-max-767(); //_carousel.scss
     @include deliver-max-767(); //_deliver.scss

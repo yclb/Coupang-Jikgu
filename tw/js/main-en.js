@@ -74,7 +74,7 @@ jQuery(document).ready(function(){
 	});
 
     jQuery(".owl-carousel-affordable").owlCarousel({
-		loop: false,
+		loop: true,
 		margin: 20,
 		nav: true,
 		slideBy: 3,

@@ -19,6 +19,11 @@ body {
     padding: 130px 0;
 }
 
+sup{
+    font-weight: 300;
+    font-size: 70%;
+}
+
 
 /* #myCarousel */
 .carousel-item > img {
@@ -365,6 +370,7 @@ body {
 
 .app-desc h2{
     margin-bottom: 10px;
+    font-weight: 400;
 }
 
 .app-desc ul{
@@ -374,6 +380,15 @@ body {
 
 .app-desc p{
     font-size: 15px;
+}
+
+#qrcode .attention{
+    font-size: 14px;
+}
+
+.app-desc sup{
+    font-weight: 300;
+    font-size: 70%;
 }
 
 
@@ -862,7 +877,7 @@ button.owl-next {
         content: "";
         height: 100%;
         position: absolute;
-        width: 600px;
+        width: 900px;
         z-index: 2;
     }
 

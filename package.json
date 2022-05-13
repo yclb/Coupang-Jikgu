@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "compile:sass": "node-sass tw/sass/main.scss tw/css/style.css -w",
-    "compile:sass-min": "node-sass -w sass/main.scss css/style-min.css --output-style compressed",
+    "compile:sass-min": "node-sass -w tw/sass/main.scss tw/css/style-min.css --output-style compressed",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
