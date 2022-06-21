@@ -1331,8 +1331,8 @@ button.owl-next {
 
     .carousel-caption h1 {
         margin: 0 0px 20px 0;
-        font-size: 20px;
-        line-height: 30px;
+        font-size: 24px;
+        line-height: 1.4;
     }
 
     .carousel-item>img.tablet {
@@ -1426,7 +1426,6 @@ button.owl-next {
     }
 
     a.btn-btn-outline-success {
-        padding: 0px 10px !important;
         display: inline-flex;
         align-items: center;
         line-height: 1;
@@ -1596,7 +1595,9 @@ button.owl-next {
 
 	#fixbtn .btn-mb a{
 		width: 308px;
-		height: 44px;
+		height: auto;
+        padding: 10px;
+        line-height: 1.5;
 	}
 
 	#fixbtn.active .btn-mb{

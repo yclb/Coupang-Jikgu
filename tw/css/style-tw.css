@@ -1486,7 +1486,6 @@ button.owl-next {
     }
 
     a.btn-btn-outline-success {
-        padding: 0px 10px !important;
         display: inline-flex;
         align-items: center;
         line-height: 1;
@@ -1629,7 +1628,9 @@ button.owl-next {
 
 	#fixbtn .btn-mb a{
 		width: 308px;
-		height: 44px;
+		height: auto;
+        padding: 10px;
+        line-height: 1.5;
 	}
 
 	#fixbtn.active .btn-mb{
