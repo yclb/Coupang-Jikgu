@@ -2,6 +2,6 @@
 
 # Ignore .DS_Store 檔案
 .DS_Store
-
+**/.DS_Store
 # Igonre node_modules
 node_modules
