@@ -809,6 +809,64 @@ button.owl-next {
 
 
 
+/* mobile slider: #whyCoupangSlider */
+#whyCoupangSlider .slider .slide-box{
+    display: flex;
+    width: calc(1130px * 8);
+    animation: slideRight 180s linear infinite;
+}
+
+#whyCoupangSlider .slider.slider--left .slide-box {
+    animation: slideLeft 180s linear infinite;
+}
+
+#whyCoupangSlider .slider .slide-item{
+    width: calc(1130px * 2);
+    height: 110px;
+    /*border: 2px solid red;*/
+    box-sizing: border-box;
+    font-size: 24px;
+    line-height: 100px;
+    text-align: center;
+}
+
+#whyCoupangSlider .slider .slide-item img {
+    height: 110px;
+    object-fit: contain;
+}
+
+@keyframes slideLeft{
+    0%{transform: translateX(0)}
+    100%{transform: translateX(calc(-1130px * 4));}
+}
+
+@keyframes slideRight{
+    0%{transform: translateX(calc(-1130px * 4));}
+    100%{transform: translateX(0)}
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    #whyCoupangSlider {
+        display: block;
+    }
+    .why-coupang-slide-1 {
+        display: none;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    #whyCoupangSlider {
+        display: none;
+    }
+    .why-coupang-slide-1 {
+        display: flex;
+    }
+}
+
+
 
 
 .float-end {

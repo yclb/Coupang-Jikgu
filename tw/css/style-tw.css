@@ -573,6 +573,17 @@ button.btn.btn-outline-success:hover {
     overflow: hidden;
     position: relative;
 }
+
+.why-coupang-slide-1{
+    display: flex;
+    animation-name: slideOutLeft;
+    /* animation-name: slideOutLeft2; */
+    animation-duration: 200000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
 .why-coupang-slide-2 {
     display: flex;
 	animation-name: slideInLeftcustom;
@@ -591,10 +602,14 @@ button.btn.btn-outline-success:hover {
 }
 .why-coupang-slide-1 {
     display: flex;
+    -webkit-animation-name: slideOutLeft;
 	animation-name: slideOutLeft;
 	/* animation-name: slideOutLeft2; */
+    -webkit-animation-duration: 400000ms;
     animation-duration: 400000ms; /* [V_0803] */
+    -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
     animation-timing-function: linear;
 }
 .why-coupang-slide-1.mb-1{
@@ -837,25 +852,82 @@ button.owl-next {
 }
 
 .why-coupang-slide-1 {
-    display: flex;
+    /* display: flex;
+    -webkit-animation-name: slideOutLeft;
 	animation-name: slideOutLeft;
-	/* animation-name: slideOutLeft2; */
-    animation-duration: 400000ms; /* [V_0803] */
+    -webkit-animation-duration: 400000ms;
+    animation-duration: 400000ms; 
+    -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear; */
 }
 
 .why-coupang-slide-1.mb-1{
 	display: none;
 }
 
-.float-end {
-    margin-top: 15px;
+
+
+
+/* mobile slider: #whyCoupangSlider */
+#whyCoupangSlider .slider .slide-box{
+    display: flex;
+    width: calc(1130px * 8);
+    animation: slideRight 180s linear infinite;
 }
 
-.wrapper-btn{
-    margin: 15% 0;
+#whyCoupangSlider .slider.slider--left .slide-box {
+    animation: slideLeft 180s linear infinite;
 }
+
+#whyCoupangSlider .slider .slide-item{
+    width: calc(1130px * 2);
+    height: 110px;
+    /*border: 2px solid red;*/
+    box-sizing: border-box;
+    font-size: 24px;
+    line-height: 100px;
+    text-align: center;
+}
+
+#whyCoupangSlider .slider .slide-item img {
+    height: 110px;
+    object-fit: contain;
+}
+
+@keyframes slideLeft{
+    0%{transform: translateX(0)}
+    100%{transform: translateX(calc(-1130px * 4));}
+}
+
+@keyframes slideRight{
+    0%{transform: translateX(calc(-1130px * 4));}
+    100%{transform: translateX(0)}
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    #whyCoupangSlider {
+        display: block;
+    }
+    .why-coupang-slide-1 {
+        display: none;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    #whyCoupangSlider {
+        display: none;
+    }
+    .why-coupang-slide-1 {
+        display: flex;
+    }
+}
+
+
 
 /************* fix ********/
 .container,
