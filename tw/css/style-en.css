@@ -274,6 +274,12 @@ sup{
 /* .section */
 
 
+/* hide selection slider items */
+#selection{
+    overflow: hidden;
+}
+
+
 /* #hero */
 #hero{
     background-color: #3f6df4;
