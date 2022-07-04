@@ -879,7 +879,7 @@ button.owl-next {
 #whyCoupangSlider .slider .slide-box{
     display: flex;
     width: calc(1130px * 8);
-    animation: slideRight 180s linear infinite;
+    animation: slideLeft 180s linear infinite;
 }
 
 #whyCoupangSlider .slider.slider--left .slide-box {
